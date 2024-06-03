@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.poseidon.conexoes.ConexaoFactory;
-import com.poseidon.model.ONG;
 import com.poseidon.model.Usuario;
 
 public class UsuarioDAO {

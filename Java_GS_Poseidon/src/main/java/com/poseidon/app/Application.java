@@ -16,7 +16,7 @@ public class Application {
 				+ "   | |  | (_) \\__ \\  __/ | (_| | (_) | | | |\r\n"
 				+ "   |_|   \\___/|___/\\___|_|\\__,_|\\___/|_| |_|\r\n"
 				+ "");
-		System.out.println("===============================================\n");
+		System.out.println("===============================================\n");	
 		
 		System.out.println("\n   Obrigado por usar o nosso Sistema. \n");
 		System.out.println("                Dev Team");

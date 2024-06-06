@@ -6,13 +6,17 @@ import java.util.List;
 
 import com.poseidon.dao.UsuarioDAO;
 import com.poseidon.model.Usuario;
+import com.poseidon.service.API_ViaCEP;
 
 public class UsuarioBO {
 	
+	API_ViaCEP cep = new API_ViaCEP();
+	
 	UsuarioDAO usuario_dao = null;
 	
-	public void InsertBO(Usuario usuario) throws ClassNotFoundException, SQLException {
+	public void InsertBO(Usuario usuario) throws ClassNotFoundException, SQLException, Exception {
 		UsuarioDAO usuario_dao = new UsuarioDAO();
+		usuario.setEndereco(cep.getEndereco(usuario.getEndereco()));
 		usuario_dao.Insert(usuario);
 	}
 	

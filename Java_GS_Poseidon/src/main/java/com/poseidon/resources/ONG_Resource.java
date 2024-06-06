@@ -26,7 +26,7 @@ public class ONG_Resource {
 	
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response cadastroRs(ONG ong, @Context UriInfo uriInfo) throws ClassNotFoundException, SQLException {
+	public Response cadastroRs(ONG ong, @Context UriInfo uriInfo) throws ClassNotFoundException, SQLException, Exception {
 		ong_BO.InsertBO(ong);
 		UriBuilder builder = uriInfo.getAbsolutePathBuilder(); 
 		builder.path(Integer.toString(ong.getId_ONG())); 

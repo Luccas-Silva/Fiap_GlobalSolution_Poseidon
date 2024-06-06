@@ -27,7 +27,7 @@ public class UsuarioResource {
 	
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response cadastroRs(Usuario usuario, @Context UriInfo uriInfo) throws ClassNotFoundException, SQLException {
+	public Response cadastroRs(Usuario usuario, @Context UriInfo uriInfo) throws Exception, ClassNotFoundException, SQLException {
 		usuarioBO.InsertBO(usuario);
 		UriBuilder builder = uriInfo.getAbsolutePathBuilder(); 
 		builder.path(Integer.toString(usuario.getId_Usuario())); 

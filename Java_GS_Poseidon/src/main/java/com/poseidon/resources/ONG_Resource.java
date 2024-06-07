@@ -20,6 +20,7 @@ import javax.ws.rs.core.UriInfo;
 import com.poseidon.bo.ONG_BO;
 import com.poseidon.model.ONG;
 
+@Path("/ong")
 public class ONG_Resource {
 	
 	private ONG_BO ong_BO = new ONG_BO();
